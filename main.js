@@ -62,5 +62,13 @@ const doggoInfo = {
 
     assignMF(){
         x = (Math.floor(Math.random() * 2) == 0)
+
+        if(x){
+            this.MF = 'Female';
+            this.assignName(this.fNames)
+        } else{
+            this.MF = 'Male';
+            this.assignName(this.mNames)
+        }
     }
 }
